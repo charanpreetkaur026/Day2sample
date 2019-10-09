@@ -10,3 +10,5 @@ import Foundation
 
 print("Hello, World!")
 
+var str="aaabbcccdeebc"
+let count

@@ -131,13 +131,18 @@ print(ss)
 
 stringdemo(s: "Charan", "Varinder", "Komal")*/
 
-var pattern = [[String]]()
-for row in pattern
+//var pattern = [[String]]()
+let i = 1
+let j = 1
+
+for i in 1...5
 {
- for item in row
+ for j in 1..<6-i
 {
-print("♥︎")
+print(j)
+    
 }
+ print("\n")
 }
 
 

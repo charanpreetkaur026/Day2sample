@@ -8,7 +8,7 @@
 
 import Foundation
 
-var a:[Int]
+/*var a:[Int]
 a  = [Int]()
 //print(a[0])  //error
 //a[0]=100
@@ -49,7 +49,7 @@ for row in  twoD{
     for item in row{
        print(twoD[[row]item])
     }
-}*/
+}
 
 var countryName : Set<String> = ["Canada", "USA", "UK", "INDIA"]
 print(countryName)
@@ -65,8 +65,81 @@ for country in countryName.sorted()
 print(country)
 }
 
-var country2: Set<String> = ["Australia", "Rassia", "China"]
+var country2: Set<String> = ["Australia", "Russia", "China"]
 print("..............")
 print(countryName.union(country2))
+
+//working with Dictionery
+
+//var dictCountry = Dictionary<Int, String>()
+//var dictCountry = [Int: String]()
+var dictCountry = [1:"USA", 2:"Canada"]
+print(dictCountry)
+var ct=dictCountry.count //=2
+print(ct)
+dictCountry.updateValue("UK", forKey: 1)
+print(dictCountry)
+dictCountry.updateValue("INDIA", forKey: 5)
+print(dictCountry)
+
+for item in dictCountry
+{
+print(item.key)
+}
+for k in dictCountry.values
+{
+    print(k, separator:"", terminator: "\n")
+}*/
+
+func add( a: Int, b: Int) -> Int
+{
+    
+    return a+b
+    
+}
+
+//print(add(a: 5, b: 7))
+let s = add(a: 5 , b: 7)
+print(s)
+
+func sum(of a1: Int, and b1: Int) -> Int{
+    return a1 + b1
+}
+
+let s1 = sum(of: 50, and: 20)
+print(s1)
+
+func swap(x:inout Int, y:inout Int)
+{
+var temp = y
+y = x
+x = temp
+}
+
+var a1 = 2
+var b1 = 3
+print("............Before Swapping.......\n A:\(a1) \n B:\(b1)")
+swap(&a1, &b1)
+print("............After Swapping ........\n A:\(a1) \n B:\(b1) \n ....................")
+
+func stringdemo(s: String...)
+{
+    for ss in s{
+print(ss)
+}
+}
+
+stringdemo(s: "Charan", "Varinder", "Komal")*/
+
+var pattern = [[String]]()
+for row in pattern
+{
+ for item in row
+{
+print("♥︎")
+}
+}
+
+
 
 
